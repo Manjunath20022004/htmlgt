@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>My Website</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <p>A beginner web developer learning HTML, CSS and JavaScript.</p>
+            <button onclick="sayHello()">Say Hello</button>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm learning web development and building my first
+                personal website. I enjoy creating simple and useful websites.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="skills">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Learning how to structure websites.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Learning how to design beautiful pages.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Learning how to make websites interactive.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form onsubmit="submitForm(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
